@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #f1f0f0;
+    color: #000;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* Buttons */
+
+button {
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Nav */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem 0 1rem;
+}
+    
+.logo {
+    cursor: pointer;
+    height: 90px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 1rem;
+}
+
+.nav-links li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    transition: all 0.2s ease 0s;
+    color: #88593d;
+    text-decoration: none;
+}
