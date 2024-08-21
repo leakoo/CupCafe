@@ -6,7 +6,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     scroll-behavior: smooth;
     background-color: #f1f0f0;
     color: #000;
@@ -44,7 +43,7 @@ a:hover, a:focus {
 
 button {
     border: none;
-    border-radius: 0.3rem;
+    border-radius: 0.75rem;
     cursor: pointer;
 }
 
@@ -90,6 +89,7 @@ header {
 
 .nav-links li a:hover {
     transition: all 0.2s ease 0s;
-    color: #88593d;
+    font-weight: bold;
+    color: #724122;
     text-decoration: none;
 }
