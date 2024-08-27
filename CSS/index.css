@@ -1,9 +1,20 @@
+/*COLORS 
+    Text - #232424
+    Main Background color - #f1f0f0
+    Primary - #724122
+    Accent - #865a3c
+*/
+
+
+/* HERO SECTION ---------------------------------------------- */
+
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: 78vh;
+    min-height: 80vh;
     padding: 2.5rem;
+    color: #232424;
 }
 
 .hero-cafe {
@@ -29,16 +40,20 @@
     margin: 0;
 }
 
+.hero-cafe span {
+    color: #724122;
+}
+
+.btn-container {
+    display: flex;
+}
+
 .hero-cafe button {
     margin: 3rem 0 0 3rem;
     height: 5rem;
     width: 15rem;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-.hero-cafe span {
-    color: #724122;
 }
 
 .btn-1 {
@@ -59,7 +74,7 @@
 
 .btn-2:hover {
     transition: all 0.2s ease 0s;
-    background-color: #694027;
+    background-color: #865a3c;
     font-size: 1.477rem;
 }
 
@@ -70,4 +85,53 @@
     max-width: 32.8125rem;
     width: 100%;
     height: auto;
+}
+
+/* ABOUT SECTION ---------------------------------------------- */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 75vh;
+    background-color: #865a3c;
+    color: #FFF;
+}
+
+.about-container h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 0 0 1rem;
+}
+
+.about-us {
+    margin: 50px;
+    padding: 2rem;
+    min-width: 400px;
+    max-width: 30%;
+    background-color: #724122;
+    border-radius: 10px;
+}
+
+.about-us p {
+    font-size: 19px;
+    line-height: 1.5;
+    padding-left: 10px;
+    border-left: 3px solid #FFF;
+}
+
+.about-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.about-img-container img {
+    height: 33rem;
+    width: auto;
+    border-radius: 10px;
 }
