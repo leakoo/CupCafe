@@ -82,6 +82,7 @@
     grid-column: 2;
     justify-self: center;
     margin: -1.75rem -1rem 0 0;
+    min-width: 250px;
     max-width: 32.8125rem;
     width: 100%;
     height: auto;
@@ -89,16 +90,16 @@
 
 /* ABOUT SECTION ---------------------------------------------- */
 
-.about-container {
+#about-container {
     display: flex;
     align-items: center;
     position: relative;
-    min-height: 75vh;
+    min-height: 90vh;
     background-color: #865a3c;
     color: #FFF;
 }
 
-.about-container h2 {
+#about-container h2 {
     font-size: 4rem;
     text-align: center;
     margin: 0 0 0 1rem;
@@ -131,7 +132,53 @@
 }
 
 .about-img-container img {
-    height: 33rem;
+    height: 32rem;
     width: auto;
     border-radius: 10px;
+}
+
+/* LOCATIONS ---------------------------------------------- */
+
+#locations-container h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: #232424;
+}
+
+.location-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.location {
+    position: relative;
+    text-align: center;
+    color: #232424;
+    padding: 0 3rem;
+}
+
+.location img {
+    height: 40rem;
+    width: auto;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto 3rem 0 3rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    border-radius: 10px 10px 0 0;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.location:hover .overlay {
+    opacity: 1;
 }

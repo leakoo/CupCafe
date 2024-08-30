@@ -12,12 +12,12 @@
 <body>
 
     <header>
-        <img class="logo" src="Images/Cafe logo.png" alt="logo">
+        <img class="logo" src="Images/Cafelogo.png" alt="logo">
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Locations</a></li>
+                <li><a href="#about-container">About</a></li>
+                <li><a href="#locations-container">Locations</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contacts.html">Contact</a></li>
             </ul>
@@ -30,14 +30,14 @@
                 <h1>CUP CAFÉ</h1>
                 <h2>BEST <span>COFFEE</span> IN THE UK</h2>
                 <div class="btn-container">
-                    <button class="btn-1" href="index.html">LOCATIONS</button>
-                    <button class="btn-2" href="products.html">VIEW PRODUCTS</button>
+                    <button class="btn-1">LOCATIONS</button>
+                    <button class="btn-2">VIEW PRODUCTS</button>
                 </div>
             </div>
             <img class="coffee-img" src="/Images/Coffee.png" alt="floating coffee with coffee beans">
         </section>
 
-        <section class="about-container">
+        <section id="about-container">
                 <div class="about-us">
                     <h2>About Cup Cafe</h2>
                     <p>Welcome to Cup Café, your cozy neighborhood spot for the best coffee in the UK. Whether you're starting your day with a rich espresso, relaxing with a smooth latte, or indulging in one of our delicious pastries, we promise to make every visit a delightful experience. At Cup Café, we are passionate about serving only the finest coffee, sourced from the best beans around the world and expertly brewed to perfection.<br><br> Our warm and inviting atmosphere is perfect for catching up with friends, getting some work done, or simply enjoying a moment of peace. Come and see why we're the go-to place for coffee lovers across the country!</p>
@@ -48,10 +48,31 @@
                     <img src="/Images/aboutIMG3.jpg" alt="inside cafe">
                 </div>
         </section>
+
+        <section id="locations-container">
+            <h2>Locations</h2>
+            <div class="location-img-container">
+                <div class="location">
+                    <img src="/Images/location1.jpg" alt="Brighton Cafe"> 
+                    <div class="overlay">Monday - Friday<br>8am - 4pm<br><br>Saturday - Sunday<br>9am - 5pm</div>
+                    <h3>Brighton</h3>
+                </div>
+                <div class="location">
+                    <img src="/Images/location2.jpg" alt="Cardiff Cafe">
+                    <div class="overlay">Monday - Friday<br>8:30am - 5pm<br><br>Saturday - Sunday<br>9am - 5pm</div>
+                    <h3>Cardiff</h3>
+                </div>
+                <div class="location">
+                    <img src="/Images/location3.jpg" alt="London Cafe">
+                    <div class="overlay">Monday - Friday<br>8am - 4pm<br><br>Saturday - Sunday<br>7:30am - 5pm</div>
+                    <h3>London</h3>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
-
-<footer>
-</footer>
 </html>
