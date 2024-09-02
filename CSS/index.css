@@ -74,7 +74,7 @@
 
 .btn-2:hover {
     transition: all 0.2s ease 0s;
-    background-color: #865a3c;
+    background-color: #804927;
     font-size: 1.477rem;
 }
 
@@ -95,13 +95,12 @@
     align-items: center;
     position: relative;
     min-height: 90vh;
-    background-color: #865a3c;
+    background-color: #724122;
     color: #FFF;
 }
 
 #about-container h2 {
     font-size: 4rem;
-    text-align: center;
     margin: 0 0 0 1rem;
 }
 
@@ -110,8 +109,8 @@
     padding: 2rem;
     min-width: 400px;
     max-width: 30%;
-    background-color: #724122;
-    border-radius: 10px;
+    background-color: #5c341b;
+    border-radius: 15px;
 }
 
 .about-us p {
@@ -142,6 +141,7 @@
 #locations-container h2 {
     font-size: 4rem;
     text-align: center;
+    padding: 3rem;
     color: #232424;
 }
 
@@ -149,6 +149,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 4rem;
     width: 100%;
 }
 
@@ -156,7 +157,11 @@
     position: relative;
     text-align: center;
     color: #232424;
-    padding: 0 3rem;
+    margin: 0 3rem;
+}
+
+.location h3 {
+    padding: 2rem;
 }
 
 .location img {
@@ -170,7 +175,7 @@
     top: 0;
     left: 0;
     right: 0;
-    margin: auto 3rem 0 3rem;
+    margin: auto 0;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #FFF;
@@ -181,4 +186,61 @@
 
 .location:hover .overlay {
     opacity: 1;
+}
+
+/* FOOTER ---------------------------------------------- */
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    background-color: #724122;
+    color: #FFF;
+}
+
+.open-hours, .social-media {
+    background-color: #5c341b;
+    padding: 1rem;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.social-items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-items i {
+    margin-right: 5px;
+}
+
+.open-hours {
+    max-width: 500px;
+}
+
+.open-hour-locations {
+    display: flex;
+    align-items: center;
+}
+
+.hours {
+    padding: 1rem;
+}
+
+.copyright {
+    background-color: #724122;
+    color: #FFF;
+    padding: 0.3rem;
+    margin: 0;
 }
