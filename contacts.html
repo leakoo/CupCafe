@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup Café</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="Images/Cafelogo.png" alt="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-container">About</a></li>
+                <li><a href="index.html#locations-container">Locations</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-container">
+            <img src="/Images/contactIMG.jpg" alt="coffee with food">
+            <div class="form-container">
+                <div class="contact-us">
+                    <h2>Contact Us</h2>
+                    <p>catering@cupcafe.co.uk</p>
+                </div>
+                <form id="contact-form">
+                    <div class="input-container">
+                        <h5>Name <span>(required)</span></h5>
+                        <div class="name-container">
+                            <div>
+                                <label for="name1">First Name</label>
+                                <input type="text" name="name1" id="name1" required>
+                            </div>
+                            <div>
+                                <label for="name2">Last Name</label>
+                                <input type="text" name="name2" id="name2" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <h5>Email <span>(required)</span></h5>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-container">
+                        <h5>Phone <span>(required)</span></h5>
+                        <label for="phone"></label>
+                        <input type="tel" name="phone" id="phone" pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$" placeholder="e.g., 07123 456789 or +44 1234 567890" required>
+                    </div>
+                    <div class="input-container">
+                        <h5>Pick Event <span>(required)</span></h5>
+                        <label for="event"></label>
+                        <select id="event" required>
+                            <option value="" disabled selected>Select an event</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="celebration">Celebration</option>
+                            <option value="business">Business</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="event">
+                        <h5>Date of Event <span>(required)</span></h5>
+                        <label for="dateOfEvent"></label>
+                        <input type="date" id="dateOfEvent" name="dateOfEvent" value="2024-01-01" required>
+                    </div>
+                    <div class="input-container">
+                        <h5>Message <span>(required)</span></h5>
+                        <label for="message"></label>
+                        <textarea name="message" id="message" rows="7" cols="40" required></textarea>
+                    </div>
+                    <div class="input-container">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+</html>

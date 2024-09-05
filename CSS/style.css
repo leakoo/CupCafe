@@ -11,7 +11,7 @@ body {
     color: #000;
 }
 
-/* Headings */
+/* HEADINGS -------------------------------------------------------*/
 
 h1 {
     font-size: 2.75rem;
@@ -38,7 +38,7 @@ h5 {
     margin: 0;
 }
 
-/* Links */
+/* LINKS -----------------------------------------------------------*/
 
 a {
     text-decoration: none;
@@ -49,7 +49,7 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* Buttons */
+/* BUTTON ----------------------------------------------------------*/
 
 button {
     border: none;
@@ -57,15 +57,69 @@ button {
     cursor: pointer;
 }
 
-/* Footer */
+/* FOOTER ----------------------------------------------------------*/
 
 footer {
     text-align: center;
-    bottom: 0;
     width: 100%;
 }
 
-/* Nav */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    background-color: #724122;
+    color: #FFF;
+}
+
+.open-hours, .social-media {
+    background-color: #5c341b;
+    padding: 1rem;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.social-items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-items i {
+    margin-right: 5px;
+}
+
+.open-hours {
+    max-width: 500px;
+}
+
+.open-hour-locations {
+    display: flex;
+    align-items: center;
+}
+
+.hours {
+    padding: 1rem;
+}
+
+.copyright {
+    background-color: #724122;
+    color: #FFF;
+    padding: 0.3rem;
+    margin: 0;
+}
+
+/* NAV ------------------------------------------------------------*/
 
 header {
     display: flex;
