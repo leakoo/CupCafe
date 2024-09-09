@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cup Café</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
 </head>
@@ -24,10 +25,122 @@
     </header>
 
     <main>
-        <section>
-            
+        <section class="product-categories">
+            <div class="products-container">
+                <h2>Drinks</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="/Images/espresso.jpg">
+                        <div class="product-info">
+                            <p>Espresso</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/Images/icedLatte.jpg">
+                        <div class="product-info">
+                            <p>Iced Latte</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/Images/matchaGreenTea.jpg">
+                        <div class="product-info">
+                            <p>Matcha Green Tea</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-container">
+                <h2>Pastries</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="/Images/croissant.jpg">
+                        <div class="product-info">
+                            <p>Croissant</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/Images/blueberryMuffin.jpg">
+                        <div class="product-info">
+                            <p>Blueberry Muffin</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/Images/chocolateEclair.jpg">
+                        <div class="product-info">
+                            <p>Chocolate Eclair</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-container">
+                <h2>Breakfast</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="/Images/avocadoToast.jpg">
+                        <div class="product-info">
+                            <p>Avocado Toast</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/Images/yogurtParfait.jpg">
+                        <div class="product-info">
+                            <p>Yogurt Parfait</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/Images/omelette.jpg">
+                        <div class="product-info">
+                            <p>Omelette</p>
+                            <button>More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="popup">
+            <div class="pop-up-content">
+                <span id="close-btn">&#10006;</span>
+                <img id="popup-img" src="">
+                <div class="pop-up-description">
+                    <h2 id="popup-heading"></h2>
+                    <p id="popup-description"></p>
+                </div>
+            </div>  
         </section>
     </main>
 
+    <footer>
+        <section class="footer-container">
+            <div class="social-media">
+                <h4>Socials</h4>
+                <div class="social-items">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #FFF;"></i>
+                    <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                </div>
+                <div class="social-items">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #FFF;"></i>
+                    <p><a href="https://www.facebook.com/" target="_blank">FaceBook</a></p>
+                </div>
+                <div class="social-items">
+                    <i class="fa-brands fa-youtube fa-2xl" style="color: #FFF;"></i>
+                    <p><a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+                </div>
+            </div>
+        </section>
+        <p class="copyright">&copy;Copyright 2024 Cup Café. All rights reserved.<br><a href="index.html">Back to Home Page</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
