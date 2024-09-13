@@ -85,3 +85,22 @@ span {
     font-weight: 400;
     font-size: 15px;
 }
+
+/* MEDIA QUERIES----------------------------------------------------*/
+
+/* xl */
+@media (max-width: 1280px) {
+
+    .contact-container img {
+        max-width: 450px;
+        margin: 2rem;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+
+    .contact-container img {
+        display: none;
+    }
+}

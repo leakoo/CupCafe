@@ -18,42 +18,47 @@
 }
 
 .hero-cafe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     grid-column: 1;
     justify-self: center;
-    height: 55%;
-    width: 75%;
+    max-width: 70%;
     margin-top: -6.5rem;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #FFF;
     border-radius: 8rem 0.3rem 8rem 0.3rem;
 }
 
 .hero-cafe h1 {
     font-size: 5rem;
-    padding: 1.25rem 0 0 2.5rem;
+    padding: 1.25rem;
     margin: 0;
+    flex-grow: 1;
 }
 
 .hero-cafe h2 {
     font-size: 3.3rem;
-    padding: 2.25rem 0 0 2.75rem;
+    padding: 1.25rem;
     margin: 0;
+    flex-grow: 1;
 }
 
 .hero-cafe span {
     color: #724122;
 }
 
-.btn-container {
-    display: flex;
-}
-
 .hero-cafe button {
-    margin: 3rem 0 0 3rem;
     height: 5rem;
-    width: 15rem;
+    width: 14rem;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    padding: 1.25rem;
+    gap: 2rem;
 }
 
 .btn-1 {
@@ -101,7 +106,7 @@
 
 #about-container h2 {
     font-size: 4rem;
-    margin: 0 0 0 1rem;
+    margin-left: 1rem;
 }
 
 .about-us {
@@ -111,6 +116,7 @@
     max-width: 30%;
     background-color: #5c341b;
     border-radius: 15px;
+    flex: 1 1 0;
 }
 
 .about-us p {
@@ -123,20 +129,21 @@
 .about-img-container {
     display: flex;
     justify-content: center;
+    flex: 1 1 0;
     margin-top: 20px;
-    overflow: hidden;
     gap: 25px;
     width: 100%;
     height: auto;
 }
 
 .about-img-container img {
-    height: 32rem;
-    width: auto;
+    aspect-ratio: 1 / 1.75;
+    width: 30%;
     border-radius: 10px;
+    object-fit: cover;
 }
 
-/* LOCATIONS ---------------------------------------------- */
+/* LOCATIONS ------------------------------------------------------*/
 
 #locations-container h2 {
     font-size: 4rem;
@@ -149,7 +156,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     width: 100%;
 }
 
@@ -157,17 +164,19 @@
     position: relative;
     text-align: center;
     color: #232424;
-    margin: 0 3rem;
+    margin: 0 6rem;
+    flex: 1 1 0;
 }
 
 .location h3 {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .location img {
-    height: 40rem;
-    width: auto;
+    width: 100%;
+    aspect-ratio: 1.25 / 2;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .overlay {
@@ -175,7 +184,7 @@
     top: 0;
     left: 0;
     right: 0;
-    margin: auto 0;
+    margin: auto;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #FFF;
@@ -186,4 +195,269 @@
 
 .location:hover .overlay {
     opacity: 1;
+}
+
+/* MEDIA QUERIES------------------------------------------------------*/
+
+/* 2xl */
+@media (max-width: 1536px) {
+
+    /* HERO SECTION --------------------------------------------------*/
+    
+    .hero-container {
+        min-height: 60vh;
+    }
+
+    .hero-cafe h1 {
+        padding: 1rem;
+    } 
+
+    .hero-cafe h2 {
+        padding: 1rem;
+    }
+
+    .hero-cafe button {
+        width: 12rem;
+        height: 5rem;
+    }
+
+    .btn-container {
+        gap: 1rem;
+        padding: 0rem;
+    }
+
+    /* ABOUT SECTION --------------------------------------------------*/
+
+    #about-container {
+        min-height: 50vh;
+    }
+
+    #about-container h2 {
+        font-size: 3rem;
+        margin-left: 0.5rem;
+    }
+
+    .about-us {
+        margin: 40px;
+    }
+
+    /* LOCATIONS ------------------------------------------------------*/
+
+    .location {
+        margin: 0 4rem;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+
+    /* HERO SECTION --------------------------------------------------*/
+
+    .hero-container {
+        min-height: 50vh;
+    }
+
+    .hero-cafe {
+        max-width: 80%;
+    }
+
+    .hero-cafe h1 {
+        font-size: 4rem;
+        padding: 0.5rem;
+    } 
+
+    .hero-cafe h2 {
+        font-size: 2.9rem;
+        padding: 0.5rem;
+    }
+
+    .hero-cafe button {
+        font-size: 1.3rem;
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .hero-cafe button:hover {
+        font-size: 1.25rem;
+    }
+
+    .btn-container {
+        gap: 1rem;
+        padding: 0rem;
+    }
+
+    .coffee-img {
+        max-width: 450px;
+    }
+
+    /* ABOUT SECTION --------------------------------------------------*/
+
+    #about-container {
+        min-height: 40vh;
+    }
+
+     #about-container h2 {
+        font-size: 3rem;
+        margin-left: 0.5rem;
+    }
+    
+    .about-us {
+        margin: 40px;
+    }
+
+    .about-img-container img {
+        aspect-ratio: 1 / 1.75;
+        width: 30%;
+    }
+
+    /* LOCATIONS ------------------------------------------------------*/
+
+    #locations-container h2 {
+        font-size: 4rem;
+        padding: 2rem;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+
+    /* HERO SECTION --------------------------------------------------*/
+
+    .hero-cafe {
+        max-width: 85%;
+        border-radius: 8rem 0.3rem 6rem 0.3rem;
+    }
+
+    .hero-cafe button:hover {
+        font-size: 1.25rem;
+    }
+
+    .coffee-img {
+        max-width: 350px;
+    }
+
+    /* ABOUT SECTION -------------------------------------------------*/
+
+    #about-container {
+        min-height: 40vh;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }   
+
+    .about-us {
+        max-width: 100%;
+    }
+
+    #about-container h2 {
+        font-size: 4rem;
+    }
+
+    .about-img-container img {
+        aspect-ratio: 1 / 1;
+    }
+
+    /* LOCATIONS ------------------------------------------------------*/
+
+    .location {
+        max-height: 67vh;
+        margin: 0 1.5rem;
+    }
+
+    #locations-container h2 {
+        padding: 3rem;
+    }
+
+    .location h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+
+    /* HERO SECTION --------------------------------------------------*/
+
+    .hero-cafe {
+        grid-column: 1 / 3;
+    }
+
+    .hero-cafe h1 {
+        font-size: 4.5rem;
+    }
+
+    .btn-container {
+        gap: 2rem;
+        padding: 1rem 0 1.25rem 0.5rem;
+    }
+
+    .hero-cafe button {
+        width: 13rem;
+    }
+
+    .coffee-img {
+        display: none;
+    }
+
+    /* ABOUT SECTION -------------------------------------------------*/
+
+    #about-container h2 {
+        font-size: 3.5rem;
+    }
+
+    /* LOCATIONS ------------------------------------------------------*/
+
+    .location {
+        max-height: 55vh;
+        margin: 0 1.5rem;
+    }
+
+    #locations-container h2 {
+        font-size: 3.25rem;
+        padding: 2.5rem;
+    }
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+
+    /* HERO SECTION --------------------------------------------------*/
+    
+    .hero-container {
+        min-height: 55vh;
+    }
+
+    .hero-cafe h1 {
+        font-size: 4rem;
+    }
+
+    .hero-cafe h2 {
+        font-size: 2rem;
+    }
+
+    .btn-container {
+        gap: 1rem;
+    }
+
+    .hero-cafe button {
+        font-size: 1.1rem;
+        width: 9.5rem;
+    }
+
+    .hero-cafe button:hover {
+        font-size: 1.075rem;
+    }
+
+    /* ABOUT SECTION -------------------------------------------------*/
+
+    #about-container h2 {
+        font-size: 3rem;
+    }
+
+    /* LOCATIONS ------------------------------------------------------*/
+
+    #locations-container h2 {
+        font-size: 3rem;
+    }
+
 }

@@ -86,7 +86,7 @@
 
 .pop-up-description {
     align-self: center;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem;
 }
 
 .pop-up-content p {
@@ -130,4 +130,108 @@ footer {
 
 .social-items {
     padding-left: 0.5rem;
+}
+
+/* MEDIA QUERIES----------------------------------------------------*/
+
+/* 2xl */
+@media (max-width: 1536px) {
+
+    .pop-up-description {
+        padding: 0 0.5rem;
+    }
+    
+    .pop-up-content p {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    
+    .pop-up-content h2 {
+        font-size: 2.1rem;
+    }
+
+    #popup-img {
+        height: 25rem;
+        width: 50%;
+        aspect-ratio: 0.5 / 1;
+        border-radius: 10px;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    
+    /* CATEGORIES -----------------------------------------------------*/
+
+    .products-container {
+        padding: 1.75rem 1.5rem;
+        margin: 3rem 0 2rem 1.5rem;
+    }
+
+    /* SIDEBAR POP UP ---------------------------------------------------*/
+
+    .pop-up-description {
+        padding: 0.5rem;
+    }
+
+    .pop-up-content {
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    #popup {
+        width: 33%;
+        right: 0.1%;
+    }
+
+    .pop-up-content p {
+        font-size: 17px;
+        line-height: 1.1;
+    }
+    
+    .pop-up-content h2 {
+        font-size: 1.9rem;
+    }
+
+    #popup-img {
+        height: 23rem;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #close-btn {
+        margin: 1.5rem;
+        font-size: 25px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+
+    .product-categories {
+        gap: 0rem;
+    }
+    
+    .products-container {
+        padding: 1.75rem 1.5rem 0 1.5rem;
+        margin: 2rem 1rem;
+        max-width: 100%;
+    }
+    
+    .products-container button {
+        display: none;
+    }
+    
+    .product p {
+        font-size: 1.4rem;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    
+    .products-container h2 {
+        font-size: 3rem;
+    }
 }
