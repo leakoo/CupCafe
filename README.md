@@ -5,7 +5,7 @@ Welcome to **Cup Café**! This is a fictional coffee shop website built as a per
 
 ## Screenshots
 
-![CupCafe Screenshot]()
+![CupCafe Screenshot](https://github.com/leakoo/CupCafe/raw/main/Images/CupCafe.png)
 
 
 ## Tech Stack
